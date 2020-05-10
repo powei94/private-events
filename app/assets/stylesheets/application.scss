@@ -11,9 +11,11 @@ $success:#015668;
 $danger:#06648C;
 $info:#0F81C7;
 $warning:#0DE2EA;
-$light:#ececec;
+$light:#FFFFFF;
 $dark:#222222;
 
 $gray-300:#e0e0e0;
 
+@import "flatpickr";
+@import "flatpickr/themes/material_red";
 @import "bootstrap";

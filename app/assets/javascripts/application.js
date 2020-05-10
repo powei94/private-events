@@ -17,3 +17,16 @@
 //= require jquery3
 //= require popper
 //= require bootstrap-sprockets
+//= require flatpickr
+//= require flatpickr/l10n/es
+
+// Flatpickr
+flatpickr.localize(flatpickr.l10ns.es);
+document.addEventListener('turbolinks:load', function() {
+    flatpickr('.datetime-picker', {
+      enableTime: true,
+      dateFormat: "d-m-Y H:i",
+      defaultDate: "today",
+      minDate: "today"
+    });
+  })

@@ -45,6 +45,8 @@ gem 'simple_form', '~> 5.0', '>= 5.0.2'
 gem 'bootstrap', '~> 4.4', '>= 4.4.1'
 gem 'jquery-rails', '~> 4.3', '>= 4.3.5'
 gem 'popper_js', '~> 1.16'
+# Datetime picker
+gem 'flatpickr', '~> 4.6', '>= 4.6.3.1'
 # Internacionalización
 gem 'rails-i18n', '~> 5.1'
 
