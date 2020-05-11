@@ -1,6 +1,6 @@
-<div class="card border-primary">
+<div class="card border-primary mb-2">
     <div class="card-header bg-transparent">
-        <%= event.start_time.to_formatted_s(:short) %>
+        <%= I18n.l(event.start_time, format: :long) %>
     </div>
     <div class="card-body">
         <h5 class="card-title"><%= event.title %></h5>

@@ -1,7 +1,5 @@
 <div class="row">
     <div class="col-md">
-        <% @events.each do |event| %>
-            <%= render 'card', event: event %>
-        <% end %>
+        <%= render 'shared/events_feed', events: @events %>
     </div>
 </div>

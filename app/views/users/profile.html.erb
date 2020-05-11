@@ -2,6 +2,7 @@
     <div class="col-md">
         <div class="user-dashboard">
             <h1>Bienvenido <%= current_user.name%></h1>
+            <%= render 'shared/events_feed', events: current_user.events %>
         </div>
     </div>
 </div>
