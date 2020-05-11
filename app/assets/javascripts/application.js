@@ -27,6 +27,7 @@ document.addEventListener('turbolinks:load', function() {
       enableTime: true,
       dateFormat: "d-m-Y H:i",
       defaultDate: "today",
-      minDate: "today"
+      // Permitir fechas pasadas por proposito de testeo
+      // minDate: "today"
     });
   })

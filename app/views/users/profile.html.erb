@@ -1,8 +1,15 @@
+<h1>Bienvenido <%= @user.name%></h1>
 <div class="row">
     <div class="col-md">
-        <div class="user-dashboard">
-            <h1>Bienvenido <%= current_user.name%></h1>
-            <%= render 'shared/events_feed', events: current_user.events %>
-        </div>
+        <h3>Tus eventos</h3>
+        <%= render 'shared/events_feed', events: @user.events %>
+    </div>
+    <div class="col-md">
+        <h3>Eventos por asistir</h3>
+        <%= render 'shared/events_feed', events: @user.upcoming_events %>
+    </div>
+    <div class="col-md">
+        <h3>Eventos pasados</h3>
+        <%= render 'shared/events_feed', events: @user.previous_events %>
     </div>
 </div>

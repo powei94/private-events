@@ -1,4 +1,5 @@
-
-<% attendees.each do |attendee| %>
-    <%= attendee.first_name %>
-<% end %>
+<div class="d-flex flex-nowrap">
+    <% attendees.each do |attendee| %>
+        <%= render 'shared/user_card', user: attendee %>
+    <% end %>
+</div>
