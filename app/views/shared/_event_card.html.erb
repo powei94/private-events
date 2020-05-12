@@ -5,16 +5,22 @@
     <div class="card-body">
         <h5 class="card-title"><%= event.title %></h5>
         <p class="card-text"><%= event.location %></p>
-        <div class="btn-group ml-auto" role="group">
-            <%= link_to event, class: "btn btn-primary" do %>
-                <i class="fas fa-link"></i>
-            <% end %>
-            <%= link_to edit_event_path(event), class: "btn btn-primary" do %>
-                <i class="fas fa-edit"></i>
-            <% end%>
-            <%= link_to event, method: :delete, data: { confirm: '¿Deseas borrar este evento?' }, class: "btn btn-primary" do %>
-                <i class="fas fa-trash"></i>
+        <div class="d-flex">
+            <% if user_signed_in? %>
+                <div class="btn-group" role="group">
+                    <%= link_to event, class: "btn btn-primary" do %>
+                        <i class="fas fa-link"></i>
+                    <% end %>
+                    <%= link_to edit_event_path(event), class: "btn btn-primary" do %>
+                        <i class="fas fa-edit"></i>
+                    <% end%>
+                    <%= link_to event, method: :delete, data: { confirm: '¿Deseas borrar este evento?' }, class: "btn btn-primary" do %>
+                        <i class="fas fa-trash"></i>
+                    <% end %>
+                </div>
+                <%= link_to "Asistir", attendances_path(event_id: event.id), method: :post, class: "btn btn-primary ml-auto" %>
             <% end %>
         </div>
+
     </div>
 </div>
