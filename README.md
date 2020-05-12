@@ -1,6 +1,6 @@
 # Eventy
 
-Aplicación web simple de eventos, cumple con las funcionalidades más básicas de Eventbrite, cuenta con registro y sesiones de usuarios, aùn es necesario corregir y agregar muchas validaciones.
+Aplicación web simple de eventos, cumple con las funcionalidades más básicas de Eventbrite, cuenta con registro y sesiones de usuarios, aún es necesario corregir y agregar muchas validaciones.
 
 Construida con:
 
