@@ -1,3 +1,11 @@
+<%if !@future_events.any? and !@past_events.any? %>
+        <div class="cover-container d-flex text-center d-flex align-items-center p-5 mx-auto flex-column">
+        <main class="inner-cover">
+            <h1 class="cover-heading">Aún no hay eventos.</h1>
+            <p class="lead">Vuelve más tarde, ¡también puedes crear tus propios eventos!</p>
+        </main>
+        </div>
+<%else%>
 <div class="row">
     <div class="col-md">
         <h3>Próximos eventos</h3>
@@ -8,3 +16,4 @@
         <%= render 'shared/events_feed', events: @past_events %>
     </div>
 </div>
+<% end %>
